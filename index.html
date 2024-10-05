@@ -4,86 +4,74 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Navya Mehta | Data Science Resume</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
     <style>
         body {
-            font-family: 'Arial', sans-serif;
+            font-family: 'Open Sans', sans-serif;
+            background-color: #f5f7fa;
+            color: #333;
             margin: 0;
             padding: 0;
-            background-color: #f7f7f7;
-            color: #333;
-            line-height: 1.6;
         }
         .container {
-            max-width: 900px;
+            max-width: 1000px;
             margin: 30px auto;
             padding: 20px;
-            background-color: #fff;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-            border-radius: 8px;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
         }
         header {
             text-align: center;
-            margin-bottom: 40px;
+            padding-bottom: 20px;
         }
         header h1 {
-            margin: 0;
-            font-size: 2.5em;
-            color: #333;
+            font-size: 3em;
+            font-family: 'Montserrat', sans-serif;
+            color: #2c3e50;
+            margin-bottom: 5px;
         }
         header p {
-            margin: 5px 0;
-            color: #555;
-            font-size: 1.2em;
+            font-size: 1.1em;
+            color: #7f8c8d;
+            margin-bottom: 10px;
         }
         .contact a {
-            color: #007bff;
+            color: #3498db;
             text-decoration: none;
+            margin: 0 10px;
         }
         .contact a:hover {
             text-decoration: underline;
         }
         .section {
-            margin-bottom: 30px;
+            margin-bottom: 40px;
         }
         .section h2 {
-            font-size: 1.8em;
-            color: #444;
-            border-bottom: 2px solid #007bff;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 2em;
+            color: #2980b9;
+            border-bottom: 3px solid #3498db;
             padding-bottom: 10px;
-            margin-bottom: 15px;
+            margin-bottom: 20px;
         }
         ul {
             list-style-type: none;
             padding-left: 0;
         }
         ul li {
-            margin-bottom: 10px;
+            margin-bottom: 15px;
+            line-height: 1.6;
         }
         ul li strong {
             font-weight: bold;
             color: #333;
         }
         .job-title {
-            color: #007bff;
-            font-size: 1.2em;
+            color: #2980b9;
+            font-size: 1.4em;
             font-weight: bold;
-        }
-        .project {
-            color: #333;
-        }
-        footer {
-            text-align: center;
-            font-size: 0.9em;
-            color: #888;
-            margin-top: 20px;
-        }
-        .tag {
-            background-color: #007bff;
-            color: white;
-            padding: 3px 8px;
-            border-radius: 15px;
-            font-size: 0.9em;
-            margin-right: 5px;
+            margin-bottom: 5px;
         }
         .profile-image {
             width: 150px;
@@ -91,13 +79,59 @@
             border-radius: 50%;
             margin-bottom: 20px;
         }
-        .about-me {
-            text-align: center;
-        }
         .about-me p {
             font-size: 1.2em;
-            color: #555;
-            margin: 10px 0;
+            color: #7f8c8d;
+            text-align: center;
+        }
+        .skills .tag {
+            display: inline-block;
+            background-color: #2980b9;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 20px;
+            margin-right: 10px;
+            margin-bottom: 10px;
+            font-size: 0.95em;
+        }
+        footer {
+            text-align: center;
+            font-size: 0.9em;
+            color: #95a5a6;
+            margin-top: 40px;
+            padding: 10px 0;
+        }
+        footer .social-icons a {
+            color: #7f8c8d;
+            margin: 0 10px;
+        }
+        footer .social-icons a:hover {
+            color: #2980b9;
+        }
+        /* Button Styling */
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #2980b9;
+            color: white;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background-color 0.3s;
+        }
+        .button:hover {
+            background-color: #3498db;
+        }
+        /* Responsive Styling */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2em;
+            }
+            .section h2 {
+                font-size: 1.8em;
+            }
+            .skills .tag {
+                font-size: 0.85em;
+            }
         }
     </style>
 </head>
@@ -113,7 +147,6 @@
     </header>
 
     <section class="about-me">
-        <!-- Replace 'you.jpg' with the actual path to your image -->
         <img src="photo.jpg" alt="Navya Mehta" class="profile-image">
         <p>Hi, I'm Navya! Welcome to my profile. I’m currently a graduate student at SUNY Buffalo State University, majoring in Data Science and Analytics. With over two years of experience in the tech industry, specializing in data-driven solutions and analytics, I am passionate about leveraging my expertise in software development, data analysis, machine learning, and business analytics. I am now actively seeking job opportunities in Software Engineering and Business Analytics, where I can apply my skills to drive impactful results.</p>
     </section>
@@ -149,7 +182,7 @@
         </div>
     </section>
 
-    <section class="section">
+    <section class="section skills">
         <h2>Skills & Proficiencies</h2>
         <ul>
             <li><span class="tag">Data Analysis Tools:</span> Excel, Tableau, PowerBI, MySQL, Neo4j, Python (pandas, NumPy, Scikit-learn), SPSS, AWS, SSIS</li>
@@ -161,31 +194,18 @@
     <section class="section">
         <h2>Projects</h2>
         <ul>
-            <li><strong>AI Coordinator (Flask, ChatGPT API, SQL, HTML, CSS, Apache)</strong> – Developed a web app for automating SQL data retrieval, hosted on university servers, improving advisor communication efficiency by 15%.</li>
-            <li><strong>Hospital Recommender (Python, Scikit-learn, AWS)</strong> – Predicted hospital costs and length of stay with 80% accuracy using models like Random Forest and Cox Regression.</li>
-            <li><strong>Airbnb Price Prediction (Python, Scikit-learn)</strong> – Built models to predict Airbnb prices with 90% accuracy using Random Forests and Decision Trees.</li>
-            <li><strong>Heart Disease Indicators (Tableau)</strong> – Improved heart disease understanding by 30% through interactive data visualizations and storytelling.</li>
-        </ul>
-    </section>
-
-    <section class="section">
-        <h2>Certifications</h2>
-        <ul>
-            <li><strong>Microsoft Certified: Azure Fundamentals (AZ-900)</strong></li>
-        </ul>
-    </section>
-
-    <section class="section">
-        <h2>Awards and Achievements</h2>
-        <ul>
-            <li>United Women Diversity Spotlight 2022 from Optum.</li>
-            <li>Dean's List for academic excellence, Fall 2023 at SUNY Buffalo State University.</li>
+            <li><strong>AI Coordinator (SUNY Buffalo State)</strong> – Created a system to aid international students with personalized guidance and automated processes.</li>
+            <li><strong>Airbnb Price Prediction</strong> – Built machine learning models using regression techniques to predict listing prices from a dataset.</li>
         </ul>
     </section>
 </div>
 
 <footer>
-    <p>© 2024 Navya Mehta | All rights reserved.</p>
+    <p>&copy; 2024 Navya Mehta. All Rights Reserved.</p>
+    <div class="social-icons">
+        <a href="#"><i class="fa fa-linkedin"></i></a>
+        <a href="#"><i class="fa fa-github"></i></a>
+    </div>
 </footer>
 
 </body>
