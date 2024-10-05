@@ -4,61 +4,53 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Navya Mehta | Data Science Resume</title>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans&display=swap" rel="stylesheet">
     <style>
         body {
-            font-family: 'Open Sans', sans-serif;
+            font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f0f4f8;
+            background-color: #f7f7f7;
             color: #333;
             line-height: 1.6;
         }
         .container {
-            max-width: 1000px;
+            max-width: 900px;
             margin: 30px auto;
             padding: 20px;
             background-color: #fff;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-            border-radius: 10px;
-            transition: transform 0.3s ease-in-out;
-        }
-        .container:hover {
-            transform: scale(1.02);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            border-radius: 8px;
         }
         header {
             text-align: center;
             margin-bottom: 40px;
         }
         header h1 {
-            font-family: 'Montserrat', sans-serif;
-            font-size: 2.8em;
-            color: #003f63;
             margin: 0;
+            font-size: 2.5em;
+            color: #333;
         }
         header p {
+            margin: 5px 0;
             color: #555;
             font-size: 1.2em;
         }
         .contact a {
-            color: #00bfa5;
+            color: #007bff;
             text-decoration: none;
-            font-weight: 600;
         }
         .contact a:hover {
-            color: #ff6600;
             text-decoration: underline;
         }
         .section {
             margin-bottom: 30px;
         }
         .section h2 {
-            font-family: 'Montserrat', sans-serif;
             font-size: 1.8em;
-            color: #003f63;
-            border-bottom: 3px solid #00bfa5;
+            color: #444;
+            border-bottom: 2px solid #007bff;
             padding-bottom: 10px;
-            margin-bottom: 20px;
+            margin-bottom: 15px;
         }
         ul {
             list-style-type: none;
@@ -69,11 +61,15 @@
         }
         ul li strong {
             font-weight: bold;
+            color: #333;
         }
         .job-title {
-            color: #ff6600;
-            font-size: 1.3em;
+            color: #007bff;
+            font-size: 1.2em;
             font-weight: bold;
+        }
+        .project {
+            color: #333;
         }
         footer {
             text-align: center;
@@ -82,33 +78,32 @@
             margin-top: 20px;
         }
         .tag {
-            background-color: #00bfa5;
+            background-color: #007bff;
             color: white;
-            padding: 5px 10px;
-            border-radius: 20px;
-            font-size: 0.85em;
+            padding: 3px 8px;
+            border-radius: 15px;
+            font-size: 0.9em;
             margin-right: 5px;
-            display: inline-block;
         }
-        a {
-            transition: color 0.3s ease;
+        .profile-image {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin-bottom: 20px;
         }
-        a:hover {
-            color: #ff6600;
+        .about-me {
+            text-align: center;
         }
-        /* Animations */
-        .fade-in {
-            animation: fadeIn 1s ease-in-out;
-        }
-        @keyframes fadeIn {
-            from { opacity: 0; }
-            to { opacity: 1; }
+        .about-me p {
+            font-size: 1.2em;
+            color: #555;
+            margin: 10px 0;
         }
     </style>
 </head>
 <body>
 
-<div class="container fade-in">
+<div class="container">
     <header>
         <h1>Navya Mehta</h1>
         <p>Buffalo, NY, USA | <a href="tel:+17163900380">716-390-0380</a> | <a href="mailto:mehtan02@buffalostate.edu">mehtan02@buffalostate.edu</a></p>
@@ -116,6 +111,12 @@
             <a href="#">LinkedIn</a> | <a href="#">GitHub</a> | <a href="#">Portfolio</a>
         </p>
     </header>
+
+    <section class="about-me">
+        <!-- Replace 'you.jpg' with the actual path to your image -->
+        <img src="photo.jpg" alt="Navya Mehta" class="profile-image">
+        <p>Hi, I'm Navya! Welcome to my profile. I’m currently a graduate student at SUNY Buffalo State University, majoring in Data Science and Analytics. With over two years of experience in the tech industry, specializing in data-driven solutions and analytics, I am passionate about leveraging my expertise in software development, data analysis, machine learning, and business analytics. I am now actively seeking job opportunities in Software Engineering and Business Analytics, where I can apply my skills to drive impactful results.</p>
+    </section>
 
     <section class="section">
         <h2>Education</h2>
@@ -127,7 +128,6 @@
 
     <section class="section">
         <h2>Employment History</h2>
-
         <div class="job">
             <span class="job-title">Data Science AI Intern</span> - DeveloperDB, Sunnyvale, CA (September 2024 - Present)
             <ul>
